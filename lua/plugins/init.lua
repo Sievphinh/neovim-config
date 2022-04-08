@@ -7,4 +7,5 @@ return require('packer').startup(function(use)
     event = "BufWinEnter",
     config = "require('treesitter-config')"
   }
+  use {'windwp/nvim-autopairs', config = "require('autopairs-config')", after = "nvim-cmp"}
 end)
