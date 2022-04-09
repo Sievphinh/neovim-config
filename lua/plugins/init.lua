@@ -22,5 +22,11 @@ return require('packer').startup(function(use)
   config = "require('lualine-config')"
 }
 use {"terrortylor/nvim-comment", config = "require('comment-config')"}
+use {
+    'akinsho/bufferline.nvim',
+    requires = 'kyazdani42/nvim-web-devicons',
+    event = "BufWinEnter",
+    config = "require('bufferline-config')"
+  }
 end)
 
