@@ -10,6 +10,6 @@ return require('packer').startup(function(use)
   use {'windwp/nvim-ts-autotag', event = "InsertEnter", after = "nvim-treesitter"}
   use {'p00f/nvim-ts-rainbow', after = "nvim-treesitter"}
   use {'windwp/nvim-autopairs', config = "require('autopairs-config')"} 
-   use {'folke/which-key.nvim', event = "BufWinEnter", config = "require('whichkey-config')"}
+  use {'folke/which-key.nvim', config = "require('whichkey-config')"}
 end)
 
