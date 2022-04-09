@@ -21,5 +21,6 @@ return require('packer').startup(function(use)
   requires = { 'kyazdani42/nvim-web-devicons', opt = true },
   config = "require('lualine-config')"
 }
+use {"terrortylor/nvim-comment", config = "require('comment-config')"}
 end)
 
