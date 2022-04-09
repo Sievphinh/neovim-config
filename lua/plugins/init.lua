@@ -11,5 +11,10 @@ return require('packer').startup(function(use)
   use {'p00f/nvim-ts-rainbow', after = "nvim-treesitter"}
   use {'windwp/nvim-autopairs', config = "require('autopairs-config')"} 
   use {'folke/which-key.nvim', config = "require('whichkey-config')"}
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = {{'nvim-lua/plenary.nvim'}},
+    config = "require('telescope-config')"
+  } 
 end)
 
