@@ -7,5 +7,9 @@ return require('packer').startup(function(use)
     event = "BufWinEnter",
     config = "require('treesitter-config')"
   }
-  use {'windwp/nvim-autopairs', config = "require('autopairs-config')",} 
+  use {'windwp/nvim-ts-autotag', event = "InsertEnter", after = "nvim-treesitter"}
+  use {'p00f/nvim-ts-rainbow', after = "nvim-treesitter"}
+  use {'windwp/nvim-autopairs', config = "require('autopairs-config')"} 
+   use {'folke/which-key.nvim', event = "BufWinEnter", config = "require('whichkey-config')"}
 end)
+
