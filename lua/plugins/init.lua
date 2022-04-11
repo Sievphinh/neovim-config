@@ -28,5 +28,10 @@ use {
     event = "BufWinEnter",
     config = "require('bufferline-config')"
   }
+use {
+    "lukas-reineke/indent-blankline.nvim",
+    config = "require('blankline-config')",
+    event = "BufRead"
+  }
 end)
 
