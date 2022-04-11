@@ -9,7 +9,7 @@ return require('packer').startup(function(use)
   }
   use {'windwp/nvim-ts-autotag', event = "InsertEnter", after = "nvim-treesitter"}
   use {'p00f/nvim-ts-rainbow', after = "nvim-treesitter"}
-  use {'windwp/nvim-autopairs', config = "require('autopairs-config')"} 
+  use {'windwp/nvim-autopairs', config = "require('autopairs-config')"}
   use {'folke/which-key.nvim', config = "require('whichkey-config')"}
   use {
     'nvim-telescope/telescope.nvim',
@@ -39,5 +39,11 @@ use {
     require('gitsigns').setup()
   end
 }
+use {
+    'kyazdani42/nvim-tree.lua',
+    requires = 'kyazdani42/nvim-web-devicons',
+    cmd = "NvimTreeToggle",
+    config = "require('nvim-tree-config')"
+  }
 end)
 

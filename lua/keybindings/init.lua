@@ -9,3 +9,7 @@ map('n', '<C-k>', '<C-w>k', {noremap = true, silent = false})
 -- makes indentation better
 map('v', '<', '<gv', {noremap = true, silent = false})
 map('v', '>', '>gv', {noremap = true, silent = false})
+-- For neovim tree
+map('n', '<leader>e', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
+
+
