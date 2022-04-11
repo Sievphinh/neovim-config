@@ -32,6 +32,12 @@ use {
     "lukas-reineke/indent-blankline.nvim",
     config = "require('blankline-config')",
     event = "BufRead"
-  }
+}
+use {
+  'lewis6991/gitsigns.nvim',
+  config = function()
+    require('gitsigns').setup()
+  end
+}
 end)
 
