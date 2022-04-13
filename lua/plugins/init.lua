@@ -46,5 +46,13 @@ use {
     config = "require('nvim-tree-config')"
   }
 use {'norcalli/nvim-colorizer.lua', config = "require('colorizer-config')", event = "BufRead"}
+use {'neovim/nvim-lspconfig', config = "require('lsp')"}
+use {'hrsh7th/cmp-nvim-lsp'}
+use {'hrsh7th/cmp-buffer'}
+use {'hrsh7th/nvim-cmp'}
+use {'hrsh7th/cmp-vsnip'}
+use {'hrsh7th/vim-vsnip'}
+use {'onsails/lspkind-nvim'}
+use {'williamboman/nvim-lsp-installer'}
 end)
 
