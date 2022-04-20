@@ -15,7 +15,7 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim',
     requires = {{'nvim-lua/plenary.nvim'}},
     config = "require('telescope-config')"
-  } 
+  }
 use {
   'nvim-lualine/lualine.nvim',
   requires = { 'kyazdani42/nvim-web-devicons', opt = true },
@@ -54,5 +54,7 @@ use {'hrsh7th/cmp-vsnip'}
 use {'hrsh7th/vim-vsnip'}
 use {'onsails/lspkind-nvim'}
 use {'williamboman/nvim-lsp-installer'}
+use {'tami5/lspsaga.nvim', config = "require('lspsaga-config')"}
+use {'jose-elias-alvarez/null-ls.nvim', config = "require('null-ls-config')"}
 end)
 
